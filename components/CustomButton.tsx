@@ -10,7 +10,7 @@ interface CustomButtonProps {
 
 const CustomButton = ({
   onPress,
-  title="",
+  title,
   textStyle = "",
   containerStyles = "",
 }) => {

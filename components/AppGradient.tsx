@@ -1,15 +1,19 @@
-import { LinearGradient } from 'expo-linear-gradient';
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { LinearGradient } from "expo-linear-gradient";
+import React from "react";
+import Content from "./Content";
 
-const AppGradient = (children: any, colors: string[]) => {
-    return (
-        <LinearGradient colors={colors} className='flex-1 '>
-            
-        </LinearGradient>
-    );
-}
-
-const styles = StyleSheet.create({})
+const AppGradient = ({
+  children,
+  colors,
+}: {
+  children: any;
+  colors: string[];
+}) => {
+  return (
+    <LinearGradient colors={colors} className="flex-1">
+      <Content>{children}</Content>
+    </LinearGradient>
+  );
+};
 
 export default AppGradient;
